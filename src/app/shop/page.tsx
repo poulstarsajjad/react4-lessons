@@ -1,8 +1,9 @@
+import Product from "@/src/components/product/Product";
 
 function Shop() {
   return (
     <div>
-      shop
+      <Product />
     </div>
   )
 }
