@@ -3,7 +3,7 @@ import Container from "../container/Container";
 async function Category() {
     const categories = ["beauty", "womens-jewellery", "fragrances" , "womens-shoes"];
     const promises = categories.map(cat =>
-    fetch(`https://dummyjson.com/products/category/${cat}?limit=1`).then(res => res.json())
+      fetch(`https://dummyjson.com/products/category/${cat}?limit=1`).then(res => res.json())
     );
     const results = await Promise.all(promises);
     const allProducts = results.flatMap(result => result.products);

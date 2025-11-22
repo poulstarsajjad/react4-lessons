@@ -9,5 +9,13 @@ interface Iproduct{
     price: number;
     images: string;
     thumbnail:string;
-    category: string
+    category: string;
+    discountPercentage: number
+}
+
+interface IdummyJsonResponse {
+  products: Iproduct[];
+  total: number;
+  skip: number;
+  limit: number;
 }
